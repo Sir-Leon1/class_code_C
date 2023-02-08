@@ -15,3 +15,5 @@ These are a set of codes used as examples.
 
 •[Examples on increment and decrement](/inc_dec.c)
 
+•[Examples on inc and dec on pointers](/inc_dec_pointers.c)
+
