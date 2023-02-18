@@ -17,3 +17,9 @@ These are a set of codes used as examples.
 
 •[Examples on inc and dec on pointers](/inc_dec_pointers.c)
 
+•[Example on types of variables](/var_types.c)
+
+•[Example 2 on variable types](/var_type2.c)
+
+•[Example 3 on variable types](/var_type3.c)
+
