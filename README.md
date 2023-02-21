@@ -13,7 +13,7 @@ These are a set of codes used as examples.
 
 •[Examples on modulo](/modulo.c)
 
-•[Examples on increment and decrement](/inc_dec.c)
+•[Increment and decrement](/inc_dec.c)
 
 •[Examples on inc and dec on pointers](/inc_dec_pointers.c)
 
@@ -23,3 +23,4 @@ These are a set of codes used as examples.
 
 •[Example 3 on variable types](/var_type3.c)
 
+•[Checking if a number is prime](/isprime.c)
