@@ -24,3 +24,5 @@ These are a set of codes used as examples.
 •[Example 3 on variable types](/var_type3.c)
 
 •[Checking if a number is prime](/isprime.c)
+
+•[How scanf works](/scanf_examples.c)
