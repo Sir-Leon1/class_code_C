@@ -20,7 +20,7 @@ int main()
     diff = n1 - n2;
     sum2 = ((n1 * n1) + (n2 * n2));
 
-    printf("\nYour first name is : %s\n", fname);
+    printf("\nYour first name is : %s\n", &fname);
     printf("Your age is : %d\n", Age);
     printf("\nSum of the two numbers is : %f\n", sum1);
     printf("Difference of the two numbers is : %f\n", diff);
