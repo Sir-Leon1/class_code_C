@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
@@ -6,13 +7,15 @@ int main()
     int YOB, Age;
     char *fname;
 
-    printf("\nEnter your first name: ");
+    fname = malloc(sizeof(char) * 40);
+
+    printf("Enter your first name: ");
     scanf("%s", fname);
-    printf("\nEnter Year of birth: ");
+    printf("Enter Year of birth: ");
     scanf("%d", &YOB);
-    printf("\nEnter two numbers of your choice\nfirst number: ");
+    printf("Enter two numbers of your choice\n\tfirst number: ");
     scanf("%f", &n1);
-    printf("\nSecond number: ");
+    printf("Second number: ");
     scanf("%f", &n2);
 
     Age = 2023 - YOB;
@@ -20,9 +23,9 @@ int main()
     diff = n1 - n2;
     sum2 = ((n1 * n1) + (n2 * n2));
 
-    printf("\nYour first name is : %s\n", &fname);
+    printf("\nYour first name is : %s\n", fname);
     printf("Your age is : %d\n", Age);
-    printf("\nSum of the two numbers is : %f\n", sum1);
+    printf("Sum of the two numbers is : %f\n", sum1);
     printf("Difference of the two numbers is : %f\n", diff);
     printf("Sum of their squares is : %f\n", sum2);
 
@@ -33,14 +36,14 @@ int main()
     }
     else if (n1 < n2)
     {
-        printf("\n%f : is greater than : %f\n", n2, n1);
+        printf("%f : is greater than : %f\n", n2, n1);
     }
     else
     {
-        printf("\nThe entered numbers are the same\n");
+        printf("The entered numbers are the same\n");
     }
+    free (fname);
 
-    //printf("\tBye");
 
     return (0);
 }
