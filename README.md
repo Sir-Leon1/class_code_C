@@ -1,5 +1,8 @@
 # class_code
-These are a set of codes used as examples.
+
+ Welcoming you to the world of C with basics
+
+ ## Contents
 
 •[The area of a circle](/circle_area.c)
 
@@ -26,3 +29,5 @@ These are a set of codes used as examples.
 •[Checking if a number is prime](/isprime.c)
 
 •[How scanf works](/scanf_examples.c)
+
+•[How if condition works](/if_condition.c)
