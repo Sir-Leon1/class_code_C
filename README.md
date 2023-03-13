@@ -31,3 +31,5 @@
 •[How scanf works](/scanf_examples.c)
 
 •[How if condition works](/if_condition.c)
+
+•[Series 0-100 in 5's](/series_0-100.c)
