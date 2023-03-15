@@ -3,7 +3,7 @@
 int main()
 {
 
-	int min, max, min1, min2;
+	int min, max, min1, min2, max1;
 	int attempts = 0;
 
 	printf("Enter two numbers\nMaximum number(Not more than 200): ");
@@ -12,6 +12,7 @@ int main()
 	scanf("%d", &min);
 	min1 = min;
 	min2 = min;
+	max1 = max;
 
 	while ((max > 200) || (min < 5) || (max < min) && (attempts < 2))
 	{
@@ -28,20 +29,21 @@ int main()
 		scanf("%d", &min);
 		min1 = min;
 		min2 = min;
+		max1 = max;
 
 		attempts++;
 	}
 
 	printf("\n");
 
-	while (min < (max+1))
+	while (max > (min-1))
 	{
-		printf("%d, ", min);
-		min++;
+		printf("%d, ", max);
+		max--;
 	}
 
-	printf("\n");
-	while (min1 < (max+1))
+	printf("\n\n");
+	while (min1 < (max1+1))
 	{
 		if (min1 % 2 == 0)
 		{
