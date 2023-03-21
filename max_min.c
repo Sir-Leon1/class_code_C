@@ -11,9 +11,9 @@ int main()
 	printf("Minimum number(Not less than 5): ");
 	scanf("%d", &min);
 	min1 = min;
-	min2 = min;
 	max1 = max;
 
+    /*Code below handles validation of required criteria*/
 	while ((max > 200) || (min < 5) || (max < min) && (attempts < 2))
 	{
 		if (attempts == 1)
@@ -28,12 +28,12 @@ int main()
 		printf("Minimum number(Not less than 5): ");
 		scanf("%d", &min);
 		min1 = min;
-		min2 = min;
 		max1 = max;
 
 		attempts++;
 	}
-
+    
+	/*Code below prints max value to min value*/
 	printf("\n");
 
 	while (max > (min-1))
@@ -43,6 +43,8 @@ int main()
 	}
 
 	printf("\n\n");
+
+	/*Code below prints even numbers between min and max*/
 	while (min1 < (max1+1))
 	{
 		if (min1 % 2 == 0)

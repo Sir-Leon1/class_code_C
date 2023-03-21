@@ -33,3 +33,8 @@
 •[How if condition works](/if_condition.c)
 
 •[Series 0-100 in 5's](/series_0-100.c)
+
+•[A function for volume](/Functions1.c)
+A function that returns the volume of a cube
+
+•[]
