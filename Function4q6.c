@@ -46,7 +46,7 @@ void full_cap(int no_ppl, int seats, float trip_dis)
         ttl_trips = 2 * ((no_ppl / seats) + 1);
 
     ttl_dis = ttl_trips * trip_dis;
-    ttl_fuel = ttl_dis * 8;
+    ttl_fuel = ttl_dis / 8;
     cst_fuel = ttl_fuel * 180;
 
     printf("\nIf the van is at full capacity:\nFuel cost = %.2fsh", cst_fuel);
@@ -76,7 +76,7 @@ void half_cap(int no_ppl, int seats, float trip_dis)
         ttl_trips2 = 2 * ((no_ppl / ((seats / 2) - 1)));
 
     ttl_dis2 = ttl_trips2 * trip_dis;
-    ttl_fuel2 = ttl_dis2 * 10;
+    ttl_fuel2 = ttl_dis2 / 10;
     cst_fuel2 = ttl_fuel2 * 180;
 
     printf("\n\nIf the van is on less than half capacity:\nFuel cost = %.2fsh", cst_fuel2);
