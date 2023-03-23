@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 float going(int, int, float);
 float back(int, float);
 int all_trips(int, int);
@@ -47,6 +48,14 @@ int main()
 }
 
 
+/*
+ * all_trips - Calculates the total number of trips for (to and fro)
+ *
+ * @no_ppl: The total number of people to be transported
+ * @seats: The total number of seats available in the van
+ *
+ * Return: The total number of trips
+ */
 int all_trips(int no_ppl, int seats)
 {
     int ttl_trips;
@@ -67,6 +76,15 @@ int all_trips(int no_ppl, int seats)
 }
 
 
+/*
+ * going - Calculates the cost of fuel for total (to)'s
+ *
+ * @ttl_trips: The total number of trips the bus is going
+ * @fuel_rate: The rate at which the van consumes fuel (per litre)
+ * @trip_dis: The distance of the trip
+ *
+ * Return: The cost of fuel
+ */
 float going(int ttl_trips, int fuel_rate, float trip_dis)
 {
    float ttl_dis, ttl_fuel, cst_fuel;
@@ -80,6 +98,14 @@ float going(int ttl_trips, int fuel_rate, float trip_dis)
 }
 
 
+/*
+ * back - The cost of fuel for total (fro)'s
+ *
+ * @ttl_trips: The total number of trips the bus is going
+ * @trip_dis: The total trip distance
+ *
+ * Return: The cost of fuel
+ */
 float back(int ttl_trips, float trip_dis)
 {
     float cst_fuel2, ttl_fuel2, ttl_dis2;
