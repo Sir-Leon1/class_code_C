@@ -75,7 +75,6 @@ void half_cap(int no_ppl, int seats, float trip_dis)
     else
         ttl_trips2 = 2 * ((no_ppl / ((seats / 2) - 1)));
 
-    //ttl_trips2 = 2 * ((no_ppl / ((seats / 2) - 1)));
     ttl_dis2 = ttl_trips2 * trip_dis;
     ttl_fuel2 = ttl_dis2 * 10;
     cst_fuel2 = ttl_fuel2 * 180;
