@@ -65,7 +65,8 @@ int main()
  * @widt: Width of container
  * @heigh: Height of container
  *
- * Return: Maximum number of bricks
+ * Return: case_1 if larger than case_2 or same as case_2
+ * otherwise case_2
  */
 int len_by_len(double len, double widt, double heigh)
 {
@@ -90,7 +91,8 @@ int len_by_len(double len, double widt, double heigh)
  * @widt: Width of container
  * @heigh: Height of container
  *
- * Return: Maximum number of bricks
+ * Return: case_1 if grater than case_2 or same as case_2
+ * otherwise case_2
  */
 int len_by_widt(double len, double widt, double heigh)
 {
@@ -114,7 +116,8 @@ int len_by_widt(double len, double widt, double heigh)
  * @widt: Width of container
  * @heigh: Height of container
  *
- * Return: Maximum number of bricks
+ * Return: case_1 if greater than case_2 or same as case_2
+ * otherwise case_2
  */
 int len_by_heigh(double len, double widt, double heigh)
 {
