@@ -60,7 +60,6 @@ int len_by_len(double len, double widt, double heigh)
     int case_1, case_2;
 
     case_1 = ((len/brick_len) * (widt/brick_widt) * (heigh/brick_heigh));
-
     case_2 = ((len/brick_len) * (widt/brick_heigh) * (heigh/brick_widt));
 
     if ((case_1 >= case_2))
@@ -86,7 +85,6 @@ int len_by_widt(double len, double widt, double heigh)
     int case_1, case_2;
 
     case_1 = ((len/brick_widt) * (widt/brick_len) * (heigh/brick_heigh));
-
     case_2 = ((len/brick_widt) * (widt/brick_heigh) * (heigh/brick_len));
 
     if ((case_1 >= case_2))
@@ -111,7 +109,6 @@ int len_by_heigh(double len, double widt, double heigh)
     int case_1, case_2;
 
     case_1 = ((len/brick_heigh) * (widt/brick_len) * (heigh/brick_widt));
-
     case_2 = ((len/brick_heigh) * (widt/brick_widt) * (heigh/brick_len));
 
     if ((case_1 >= case_2))
