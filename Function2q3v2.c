@@ -25,7 +25,7 @@ int main()
 
     printf("\nThe volume is = %fm³", total_volume);
     printf("\nThe surface area is = %fm²", surface_area);
-    printf("The dimensions of the cube are\nLength: %fm\nWidth: %fm\nHeight: %fm", side, side, side);
+    printf("\nThe dimensions of the cube are\nLength: %fm\nWidth: %fm\nHeight: %fm", side, side, side);
     printf("\nThe total cost of printing will be = KSH%f", total_cost);
 
     return (0);
