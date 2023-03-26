@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 #define PIE 3.142
 
 float vol_cone(float, float);
@@ -13,7 +14,7 @@ int main()
     scanf("%f", &r);
 
     vol1 = vol_cone((heit/to_m), (r/to_m));
-    cube_dimen = vol1 / 3;
+    cube_dimen = cbrtf(vol1);
     printf("Dimensions of the cube are\nL=%.2fm\nW=%.2fm\nH=%.2fm", cube_dimen, cube_dimen, cube_dimen);
 
     area1 = cube_sur_area(cube_dimen);
