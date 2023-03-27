@@ -8,7 +8,7 @@ float cost(float surface_area, int a);
 
 int main()
 {
-    float radius, height, total_volume, surface_area, total_cost, result, side;
+    float radius, height, total_volume, surface_area, total_cost, side;
 
     printf("Enter the following dimensions of the cone\nRadius=");
     scanf("%f", &radius);
@@ -31,9 +31,9 @@ int main()
     surface_area = area(side);
     total_cost = cost(surface_area, 150);
 
-    printf("\nThe volume of the cone is = %.3fm³", total_volume);
-    printf("\nThe surface area of the cube formed from cone = %.3fm²", surface_area);
-    printf("\nThe dimensions of the cube are\nLength: %.3fm\nWidth: %.3fm\nHeight: %.3fm", side, side, side);
+    printf("\nThe volume of the cone is = %.3f(cubic metres)�", total_volume);
+    printf("\nThe surface area of the cube formed from cone = %.3fm(square metres)", surface_area);
+    printf("\nThe length of each side of the cube is: %.3fm", side);
     printf("\nThe total cost of printing will be = KSH%.2f", total_cost);
 
     return (0);
