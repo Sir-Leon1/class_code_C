@@ -16,7 +16,10 @@ int main()
     scanf("%f", &height);
     
     if ((radius <= 0) || (height <= 0))
-        {printf("Invalid input.Please input correct parameters")}
+        {
+        printf("Invalid input.Please input correct parameters");
+        return (0);
+        }
   
 
 
