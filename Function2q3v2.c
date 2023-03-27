@@ -14,6 +14,11 @@ int main()
     scanf("%f", &radius);
     printf("\nHeight=");
     scanf("%f", &height);
+    
+    if ((radius <= 0) || (height <= 0))
+        {printf("Invalid input.Please input correct parameters")}
+  
+
 
     radius = radius * 0.025;
     height = height * 0.025;
