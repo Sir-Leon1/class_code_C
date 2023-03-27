@@ -31,7 +31,7 @@ int main()
     surface_area = area(side);
     total_cost = cost(surface_area, 150);
 
-    printf("\nThe volume of the cone is = %.3f(cubic metres)�", total_volume);
+    printf("\nThe volume of the cone is = %.3f(cubic metres)", total_volume);
     printf("\nThe surface area of the cube formed from cone = %.3fm(square metres)", surface_area);
     printf("\nThe length of each side of the cube is: %.3fm", side);
     printf("\nThe total cost of printing will be = KSH%.2f", total_cost);
