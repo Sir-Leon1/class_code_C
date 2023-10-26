@@ -10,34 +10,36 @@ import javafx.stage.Stage;
 
 import java.util.Random;
 
-
-
-public class Guessing_GUI extends Application {
-    private int rand;
-    private int trial = 1;
+public class GuessingGameGUI extends Application {
+    private int randomNumber;
+    private int trialNumber = 1;
 
     @Override
     public void start(Stage primaryStage) {
         Random random = new Random();
-        rand = random.nextInt(100);
+        randomNumber = random.nextInt(100);
 
-        Label label = new Label("Hey, welcome to the guessing game. You have 3 Trials:");
+        Label label = new Label("Welcome to the Guessing Game. You have 3 trials:");
         Label trialLabel = new Label("Trial 1");
         TextField inputField = new TextField();
         Button guessButton = new Button("Guess");
         Label resultLabel = new Label("");
 
         guessButton.setOnAction(event -> {
-            int guess = Integer.parseInt(inputField.getText());
-            if (guess == rand) {
-                showResult("Game Won", "You got it Correct: " + rand);
-            } else if (trial < 3) {
-                trial++;
-                trialLabel.setText("Trial " + trial);
-                inputField.clear();
-                resultLabel.setText("Wrong, Try again");
-            } else {
-                showResult("Game Lost", "The number was: " + rand);
+            try {
+                int guess = Integer.parseInt(inputField.getText());
+                if (guess == randomNumber) {
+                    showResult("Game Won", "You guessed it right: " + randomNumber);
+                } else if (trialNumber < 3) {
+                    trialNumber++;
+                    trialLabel.setText("Trial " + trialNumber);
+                    inputField.clear();
+                    resultLabel.setText("Wrong guess. Try again.");
+                } else {
+                    showResult("Game Lost", "The number was: " + randomNumber);
+                }
+            } catch (NumberFormatException e) {
+                resultLabel.setText("Invalid input. Please enter a number.");
             }
         });
 
